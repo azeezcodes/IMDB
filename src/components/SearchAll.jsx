@@ -37,7 +37,7 @@ const SearchAll = () => {
                className="bg-[#5FCF7B] text-black rounded-md px-3 py-1 h-10 hover:bg-[#85db9a]"
                onClick={() => handleCLick()}
             >
-               Search Movies
+               Search 
             </button>
          </div>
          {/* result */}
