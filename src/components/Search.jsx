@@ -10,7 +10,7 @@ const Search = () => {
       const loaddata = async () => {
          const response = await axios({
             method: "GET",
-            url: `https://imdb-api.com/en/API/SearchTitle/k_3bdud124/${expression}`,
+            url: `https://imdb-api.com/en/API/SearchTitle/k_d4n752kc/${expression}`,
             headers: {
                "Content-Type": "application/json",
             },
