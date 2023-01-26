@@ -41,13 +41,13 @@ const Nav = () => {
 
         <div className="flex-col gap-2 lg:hidden">
            <div
-              className="text-white font-bold text-[4px]"
+              className=" text-[#85db9a] font-bold text-[20px] relative"
               onClick={() => setShow(!show)}
            >
               <AiOutlineAlignRight />
            </div>
            {show && (
-              <div className="flex-col gap-2">
+              <div className="flex-col gap-2 absolute">
                  <Link to="/">
                     <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left">
                        {" "}
