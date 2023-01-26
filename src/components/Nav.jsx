@@ -51,7 +51,7 @@ const Nav = () => {
          </div>
          <div>
             {show && (
-               <div className="flex-col gap-2  w-[400px]">
+               <div className="flex-col lg:hidden gap-2  w-[400px] ml-3">
                   <Link to="/">
                      <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold ">
                         {" "}
