@@ -1,11 +1,16 @@
-import React from 'react'
-import { AiOutlineFire, AiOutlineSearch } from "react-icons/ai";
+import React, {useState} from 'react'
+import {
+   AiOutlineFire,
+   AiOutlineSearch,
+   AiOutlineAlignRight,
+} from "react-icons/ai";
 import { TbMovie } from "react-icons/tb";
 import { MdOutlineOndemandVideo } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
+   const [show, setShow] = useState(false);
   return (
      <div className="bg-[#161616] px-8 h-24 flex justify-between text-white items-center">
         <Link to="/">
@@ -32,6 +37,37 @@ const Nav = () => {
                  <MdOutlineOndemandVideo /> <p>Search By Title</p>
               </div>
            </Link>
+        </div>
+
+        <div className="flex-col gap-2 lg:hidden">
+           <div
+              className="text-white font-bold text-[4px]"
+              onClick={() => setShow(!show)}
+           >
+              <AiOutlineAlignRight />
+           </div>
+           {show && (
+              <div className="flex-col gap-2">
+                 <Link to="/">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left">
+                       {" "}
+                       <AiOutlineFire /> <p>Trending</p>{" "}
+                    </div>
+                 </Link>
+                 <Link to="/searchmovie">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left ">
+                       {" "}
+                       <TbMovie /> <p>Search All Movies </p>
+                    </div>
+                 </Link>
+                 <Link to="/searchtitle">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left">
+                       {" "}
+                       <MdOutlineOndemandVideo /> <p>Search By Title</p>
+                    </div>
+                 </Link>
+              </div>
+           )}
         </div>
      </div>
   );
