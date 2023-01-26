@@ -47,21 +47,21 @@ const Nav = () => {
               <AiOutlineAlignRight />
            </div>
            {show && (
-              <div className="flex-col gap-2 absolute">
+              <div className="flex-col gap-2  w-[400px]">
                  <Link to="/">
-                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold ">
                        {" "}
                        <AiOutlineFire /> <p>Trending</p>{" "}
                     </div>
                  </Link>
                  <Link to="/searchmovie">
-                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left ">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold  ">
                        {" "}
                        <TbMovie /> <p>Search All Movies </p>
                     </div>
                  </Link>
                  <Link to="/searchtitle">
-                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold text-left">
+                    <div className="flex gap-4 items-center text-[#85db9a] hover:text-white hover:font-bold ">
                        {" "}
                        <MdOutlineOndemandVideo /> <p>Search By Title</p>
                     </div>
